@@ -1,0 +1,82 @@
+
+
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    
+    <title>DOGE2121</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta HTTP-EQUIV="REFRESH"; content="9 url=main.html">
+    <link rel="shortcut icon" type= "image/png" href="favicon.png">
+  
+  </head>
+<embed src="background1.mp3" loop="true" autostart="true" width="0" height="0" volume="0.01"></embed>
+<body>
+
+  
+      
+      <div class="video-container">
+         
+          <video class="w3-mobile" type="video/mp4" src="videos/war.mp4"  autoplay></video>
+     
+      </div>
+
+</body>
+
+</html>
+<style>
+
+
+
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  object-fit:cover;
+
+
+   
+}
+
+.video-container video {
+  max-width: 100% ;
+  max-height: 80% ;
+  min-width:79%;
+  min-height: 43%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 0 20px white;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  border: solid 25px #484848;
+  border-radius: 18px;
+
+}
+
+
+
+.content {
+  z-index: 2;
+}
+
+body {
+  background-image: url('images/bg.jpg');
+  background-width:100%;
+  background-height:100%;
+}
+
+
+
+</style>
+
+<script>
+document.getElementsByTagName('video')[0].volume = 0.23;
+</script>
