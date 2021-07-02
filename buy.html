@@ -24,14 +24,15 @@
 
 									<p>
 							        </p>					      
-
-
+                                    <i>*click images to play audio</i>
+                                    <hr>
 									<h2>Create Your Wallet</h2>
 									 <p><span class="icon solid fa-wallet"></span>
 									 	<p>
 									 	</p>
 
-									 	<span class="image main"><img class="image main" src="images/metamask1.jpg" alt="" /></span>
+									 	<span class="image main"><img class="image main" src="images/metamask1.jpg" value="PLAY"  onclick="playAudio('audio')">
+                                             <audio id="audio" src="voice/1.mp3" ></audio> </span>
 
 									         <div><p><strong>Download <b><a href="https://metamask.io/" class="label">Metamask</a></b>  and create a wallet if you do not already have one</strong></p>
 									         	<p><strong> Write down your seed phrase on a piece of paper and store in a secure place </strong></p>
@@ -48,7 +49,10 @@
 									         	<p>
 									         	</p>
 
-									         	<p><span class="image main"><img src="images/metamask2.jpg" alt="" /></span></p>
+									         	<p><span class="image main"><img src="images/metamask2.jpg" value="PLAY"  onclick="playAudio('audio2')">
+									         		 <audio id="audio2" src="voice/2.mp3" ></audio> </span>
+
+									         	</span></p>
 
 
 
@@ -58,7 +62,8 @@
 
 									         	<hr>									         	
 
-									         	<span class="image main"><img src="images/metamask3.jpg" alt="" /></span>
+									         	<span class="image main"><img src="images/metamask3.jpg" value="PLAY"  onclick="playAudio('audio3')">
+									         		 <audio id="audio3" src="voice/3.mp3" ></audio> </span>
 
 									         	<p><strong>Click "Networks"</strong></p>
 
@@ -66,13 +71,15 @@
 
 									         	
 
-									         	<span class="image main"><img src="images/metamask4.jpg" alt="" /></span>
+									         	<span class="image main"><img src="images/metamask4.jpg" value="PLAY"  onclick="playAudio('audio4')">
+									         		 <audio id="audio4" src="voice/4.mp3" ></audio> </span>
 
 									         	<p><strong>Click "Add Network" and fill in the details as shown in the picture above</strong></p>
 
 									         	<hr>									         	
 
-									         		<span class="image main"><img src="images/metamask5.jpg" alt="" /></span>
+									         		<span class="image main"><img src="images/metamask5.jpg" value="PLAY"  onclick="playAudio('audio5')">
+									         		 <audio id="audio5" src="voice/5.mp3" ></audio> </span>
 
 									         	<p><strong>Save and navigate back to your wallet. It should now display BNB and "Smart Chain" as your network.</strong></p>
 
@@ -86,7 +93,8 @@
                                                 <p>
                                                 </p>
 
-                                                  <span class="image main"><img src="images/metamask6.jpg" alt="" /></span>
+                                                  <span class="image main"><img src="images/metamask6.jpg" value="PLAY"  onclick="playAudio('audio6')">
+									         		 <audio id="audio6" src="voice/6.mp3" ></audio> </span>
 
                                                 <p><strong>Purchase BNB on your preferred exchange and send it to your wallet that is connected to the Smart Chain</strong></p>
 
@@ -102,37 +110,42 @@
                                                 	<p>
                                                 	</p>
 
-                                                	<span class="image main"><img src="images/metamask7.jpg" alt="" /></span>
+                                                	<span class="image main"><img src="images/metamask7.jpg" value="PLAY"  onclick="playAudio('audio7')">
+									         		 <audio id="audio7" src="voice/7.mp3" ></audio> </span>
 
                                                 	<p><strong>Navigate to "Browser" within your wallet</strong></p>
 
                                                 	<hr>
                                                 	  
 
-                                                	  <span class="image main"><img class="slim" src="images/pancakeswap.jpg" alt="" /></span>
+                                                	  <span class="image main"><img class="slim" src="images/pancakeswap.jpg" value="PLAY"  onclick="playAudio('audio8')">
+									         		 <audio id="audio8" src="voice/8.mp3" ></audio> </span>
+
 
                                                 	<p><strong>Go to <a href="https://exchange.pancakeswap.finance/#/swap" class="label">exchange.pancakeswap.finance</a> and connect your wallet</strong></p>
 
                                                 	<hr>                                               	  
 
 
-                                                	<span class="image main"><img class="slim" src="images/pancakeswap2.jpg" alt="" /></span>
+                                                	<span class="image main"><img class="slim" src="images/pancakeswap2.jpg" value="PLAY"  onclick="playAudio('audio9')">
+									         		 <audio id="audio9" src="voice/9.mp3" ></audio> </span>
 
                                                 	<p><strong>Click on "Select a currency", paste the contract address, and then click "import"</strong></p>
                                                 	<p><input type="text"  id="myInput" value="0xb5e6a4aa134f6f7fce99d5e2ae7aa825a5ca10d5"></p>
-                                                	<button onclick="myFunction()">Copy contract address</button>
+                                                	<button class="one" onclick="myFunction()">Copy contract address</button>
 
                                                 	<hr>                                               
                                                 	
 
-                                                	<p><strong>Select the amount of BNB you'd like use, and confirm the transaction to swap for DOGE2121</strong></p>
+                                                	<p><strong>Select the amount of BNB you'd like to use, and confirm the transaction to swap for DOGE2121</strong></p>
 
 
 
 
                                                 <hr>
 
-                                                <center><a><p><form action="main.html"><button class="dropbtn"><h5>Back to home</h5></button></form><center></p></a>
+                                                <div><center><form action="main.html">
+                                                	<button class="dropbtn"><h5>Back to home</h5></button></form></center></div>
 
 
 
@@ -248,9 +261,26 @@ span {
 	color:#00b7cd;
 }
 
+audio.volume
 
+audio.volume = number
+
+}
+
+.one {
+  background:  transparent;
+  color: white;
+  width: 250px;
+  padding: 16px;
+  font-size: 16px;
+  border: round;
+  border-radius: 18px;
+  box-shadow: 0px 0px 0px white;
+
+
+}
 .dropbtn {
-  background: #560586;
+  background:  #560586;
   color: white;
   width: 250px;
   padding: 16px;
@@ -316,6 +346,40 @@ function myFunction() {
   document.execCommand("copy");
 
   /* Alert the copied text */
-  alert("Contract address copied");
+ 
 }
+
+  function playAudio(audioId){
+        var audio = document.getElementById(audioId);
+        audio.play();
+    }
+
+
+var vid = document.getElementById("audio");
+vid.volume = 0.21;
+
+var vid = document.getElementById("audio2");
+vid.volume = 0.21;
+
+var vid = document.getElementById("audio3");
+vid.volume = 0.21;
+
+var vid = document.getElementById("audio4");
+vid.volume = 0.21;
+
+var vid = document.getElementById("audio5");
+vid.volume = 0.21;
+
+var vid = document.getElementById("audio6");
+vid.volume = 0.21;
+
+var vid = document.getElementById("audio7");
+vid.volume = 0.21;
+
+var vid = document.getElementById("audio8");
+vid.volume = 0.21;
+
+var vid = document.getElementById("audio9");
+vid.volume = 0.21;
+
 </script>
